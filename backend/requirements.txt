@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+psycopg2-binary
+python-dotenv
+pydantic
+apscheduler
+requests
+beautifulsoup4
+lxml
+google-genai
+pytest
+alembic
