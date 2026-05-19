@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.db.database import engine, Base
+from app.db.database import engine
 from app.core.logger import logger
 from app.scheduler import start_scheduler
 
@@ -14,10 +14,7 @@ from app.api.history import router as history_router
 from app.api.crawler_run import router as crawler_run_router
 
 from app.crawlers.crawler_manager import run_all_crawlers
-
-import app.models  # ensure all models are registered before create_all
-
-Base.metadata.create_all(bind=engine)
+import app.models
 
 app = FastAPI(
     title="AI Law Watchdog",
