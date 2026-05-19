@@ -5,7 +5,7 @@ from app.db.session import get_db
 from app.models.law_event import LawEvent
 from app.schemas.law_events import LawEventCreate, LawEventResponse
 
-router = APIRouter(prefix="/law-event", tags=["Law Events"])
+router = APIRouter(prefix="/law-events", tags=["Law Events"])
 
 
 @router.get("", response_model=list[LawEventResponse])
