@@ -6,7 +6,7 @@ from app.crawlers.base_crawler import (
 class ChinaCrawler(BaseCrawler):
 
     URL = (
-        "https://www.cac.gov.cn/"
+        "https://www.whitecase.com/insight-our-thinking/ai-watch-global-regulatory-tracker-china"
     )
 
     LAW_ID = 5

@@ -6,7 +6,7 @@ from app.crawlers.base_crawler import (
 class ChinaGenCrawler(BaseCrawler):
 
     URL = (
-        "https://www.cac.gov.cn/2023-04/11/c_1682854275475410.htm"
+        "https://english.www.gov.cn/news/202307/13/content_WS64aff5b3c6d0868f4e8ddc01.html"
     )
 
     LAW_ID = 6
