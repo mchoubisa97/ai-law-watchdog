@@ -55,9 +55,9 @@ app.include_router(crawler_run_router)
 # ----------------------------
 # Health check
 # ----------------------------
-@app.get("/", tags=["Health"])
+@app.api_route("/", methods=["GET", "HEAD"], tags=["Health"])
 def root():
-    return {"status": "ok", "message": "AI Law Watchdog Running"}
+    return {"status": "ok", "service": "AI Law Watchdog"}
 
 
 # ----------------------------
