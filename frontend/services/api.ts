@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8000"
+const BASE_URL = "https://ai-law-watchdog-backend.onrender.com"
 
 export async function fetchAPI(path: string) {
   const res = await fetch(`${BASE_URL}${path}`)
